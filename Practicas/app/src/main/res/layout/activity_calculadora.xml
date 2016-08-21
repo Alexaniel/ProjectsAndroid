@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calculadora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniel.practicas.Calculadora">
+
+    <TextView
+        android:text="CALCULADORA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView2"
+        android:typeface="sans"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="300dp"
+        android:id="@+id/linearLayout"
+        >
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etxtnum1"
+            android:hint="#1"
+            android:layout_marginLeft="110dp"
+            android:textAlignment="center"
+            android:textStyle="normal|italic"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etxtnum2"
+            android:hint="#2"
+            android:textAlignment="center"
+            android:textStyle="normal|italic"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtResultado"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="140dp">
+
+        <Button
+            android:text="+"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSuma"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="Suma"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:text="-"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnResta"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="Resta"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:text="*"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMult"
+            android:layout_weight="1"
+            android:elevation="15dp"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="Multiplicacion"
+            tools:ignore="ButtonStyle,HardcodedText,UnusedAttribute" />
+
+        <Button
+            android:text="/"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDiv"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="Division"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:id="@+id/txtResultado"
+        android:textStyle="normal|italic"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:layout_alignTop="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="24sp" />
+
+    <Button
+        android:text="Regresar"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegresar"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:onClick="Regresar"
+        android:layout_marginBottom="67dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+</RelativeLayout>

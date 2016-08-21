@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sensores"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniel.practicas.Sensores">
+
+    <TextView
+        android:text="acelerometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView3"
+        android:typeface="sans"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:fontFamily="casual"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:text="Eje X"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:fontFamily="casual"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:typeface="serif"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etxtejex"
+            android:fontFamily="casual"
+            android:typeface="sans"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:text="Eje Y"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:fontFamily="casual"
+            android:typeface="sans"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimaryDark"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etxtEjeY"
+            android:fontFamily="casual"
+            android:typeface="sans"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="UnusedAttribute" />
+
+        <TextView
+            android:text="Eje Z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:fontFamily="casual"
+            android:typeface="sans"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimaryDark"
+            tools:ignore="HardcodedText,UnusedAttribute"
+            android:textSize="18sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etxtEjeZ"
+            android:fontFamily="casual"
+            android:typeface="sans"
+            android:textAlignment="center"
+            android:textStyle="normal|italic"
+            android:textColor="@android:color/holo_red_dark"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+
+</RelativeLayout>
