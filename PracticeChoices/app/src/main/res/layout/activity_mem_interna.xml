@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mem_interna"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniel.practicechoices.MemInterna">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Ingrese el texto"
+        android:id="@+id/Ingresar"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="30px" />
+
+    <TextView
+        android:text="Notas Personales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView8"
+        android:typeface="sans"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Salida del texto"
+        android:id="@+id/Salida"
+        android:textColor="#ffffff"
+        android:textSize="30px"
+        android:layout_below="@+id/btnLeer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leer"
+        android:id="@+id/btnLeer"
+        android:textColor="@color/colorPrimary"
+        android:onClick="leer"
+        android:allowUndo="false"
+        android:elevation="15dp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/txtIngresar"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escribir"
+        android:id="@+id/btnEscribir"
+        android:onClick="escribir"
+        android:elevation="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_above="@+id/Salida"
+        android:layout_alignLeft="@+id/btnRegresar"
+        android:layout_alignStart="@+id/btnRegresar" />
+
+    <Button
+        android:text="Regresar"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegresar"
+        android:elevation="15dp"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:onClick="Regresar"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/txtSalida"
+        android:layout_alignRight="@+id/btnLeer"
+        android:layout_alignEnd="@+id/btnLeer" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/txtSalida"
+        android:background="#ffffff"
+        android:hint="Notas"
+        android:fontFamily="casual"
+        android:textStyle="normal|italic"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/Salida"
+        android:layout_alignBottom="@+id/Salida"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:id="@+id/txtIngresar"
+        android:background="#ffffff"
+        android:fontFamily="casual"
+        android:hint="Ingrese texto aqui"
+        android:textStyle="normal|italic"
+        android:textAlignment="center"
+        android:layout_below="@+id/Ingresar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

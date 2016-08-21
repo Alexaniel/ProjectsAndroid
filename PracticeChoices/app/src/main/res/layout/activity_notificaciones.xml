@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notificaciones"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daniel.practicechoices.Notificaciones">
+
+    <TextView
+        android:text="Se ha generado la notificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView10"
+        android:typeface="sans"
+        android:textStyle="normal|italic"
+        android:textSize="24sp"
+        android:fontFamily="casual"
+        android:textColor="@android:color/background_dark"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:text="Regresar"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegresar"
+        android:elevation="15dp"
+        android:textAlignment="center"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="Regresar" />
+</RelativeLayout>
